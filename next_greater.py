@@ -7,7 +7,7 @@ def nextGreater(ls):
     stack.append(ls[-1])
     result.append("-")
 
-    for i in ls[-1::-1]:
+    for i in ls[-2::-1]:
         while len(stack) != 0 and stack[-1] <= i:
             stack.pop()
 
