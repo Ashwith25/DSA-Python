@@ -31,6 +31,10 @@ def largestRect(ls):
         res = max(res, maxArea(newRow))
 
     return res
+matrix = [[0, 1, 1, 0],
+          [1, 1, 1, 1],
+          [1, 1, 1, 1],
+          [1, 1, 0, 0]]
 
-print(largestRect([[0, 1, 1, 0], [1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 0, 0]]))
+print(largestRect(matrix))
 
